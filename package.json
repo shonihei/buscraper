@@ -1,0 +1,19 @@
+{
+  "name": "buscraper",
+  "version": "1.0.0",
+  "description": "webscraping module for BU class schedule website",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Sho Nihei",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.4",
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
