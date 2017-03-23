@@ -1,4 +1,4 @@
-var buscraper = require('buscraper');
+var buscraper = require('../index');
 
 describe('API', function() {
     describe('#getClass("20174", "CASCS111")', function() {

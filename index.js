@@ -1,6 +1,4 @@
-// REFACTORRRRRR!
-// Fix getClasses API so that if one getClass call fails, it will return everything else
-// that succeeded.
+//Fix line 186 ish area of adding times and days in an intuitive fashion.
 
 var request = require('request');
 var async = require('async');
@@ -184,10 +182,13 @@ function getClass(semester, input, doneCallback) {
                             })
                             var tms = new Object();
                             $(days).each(function(int, val) {
-                                tms[val] = {
-                                    "start" : startTimes[int],
-                                    "end" : endTimes[int]
-                                }
+                                val = val.split(',');
+                                $(val).each(function(int, day) {
+                                    tms[day] = {
+                                        "start" : startTimes[int],
+                                        "end" : endTimes[int]
+                                    }
+                                });
                             })
                             newSection.times = tms;
                             eachOfCallback();
