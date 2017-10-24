@@ -1,6 +1,6 @@
 {
   "name": "buscraper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "webscraping module for BU class schedule website",
   "main": "index.js",
   "scripts": {
